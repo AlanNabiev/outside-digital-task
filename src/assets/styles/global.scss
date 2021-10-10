@@ -1,0 +1,62 @@
+$bg-color_hover: #EA0029;
+$disabled: #BEC5CC;
+$text-black: #000000;
+$text-gray: #9D9D9D;
+$text-red: #EA0029;
+$text-red_hover: #F53A31;
+$text-white: #FFFFFF;
+$text-s: 10px;
+$text-m: 14px;
+$text-l: 16px;
+$text-xl: 18px;
+$text-xxl: 28px;
+$font-light: 300;
+$font-medium: normal;
+$line-low: 12px;
+$line-middle: 24px;
+$line-high: 40px;
+
+@mixin bg-color {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+}
+
+
+@mixin headline {
+    font-weight: $font-medium;
+    font-size: $text-xxl;
+    line-height: $line-high;
+}
+
+@mixin text-default {
+    font-weight: $font-light;
+    font-size: $text-l;
+    line-height: $line-middle;
+}
+
+@mixin text-label {
+    font-weight: $font-medium;
+    font-size: $text-m;
+    line-height: $line-middle;
+    color: $text-black;
+}
+
+@mixin text-error {
+    font-weight: $font-light;
+    font-size: $text-s;
+    line-height: $line-low;
+}
+
+@mixin cursor {
+    cursor: url('../icons/pointer.svg'), auto;
+}
+
+@mixin btn_shadow {
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
