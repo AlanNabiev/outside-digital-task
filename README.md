@@ -1,4 +1,5 @@
 # outside-digital-task
+Live: https://alannabiev.github.io/outside-digital-task/
 
 ## Project setup
 ```
