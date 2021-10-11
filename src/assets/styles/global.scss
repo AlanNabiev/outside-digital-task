@@ -1,18 +1,21 @@
-$bg-color_hover: #EA0029;
+$bg-color-hover: #EA0029;
+$bg-red: #FF5E56;
 $disabled: #BEC5CC;
 $text-black: #000000;
 $text-gray: #9D9D9D;
-$text-red: #EA0029;
-$text-red_hover: #F53A31;
+$text-red: #F53A31;
+$text-red-hover: #EA0029;
 $text-white: #FFFFFF;
 $text-s: 10px;
+$text-xs: 12px;
 $text-m: 14px;
 $text-l: 16px;
 $text-xl: 18px;
 $text-xxl: 28px;
-$font-light: 300;
-$font-medium: normal;
+$font-light: 400;
+$font-medium: 500;
 $line-low: 12px;
+$line-low-l: 16px;
 $line-middle: 24px;
 $line-high: 40px;
 
@@ -25,6 +28,7 @@ $line-high: 40px;
     font-weight: $font-medium;
     font-size: $text-xxl;
     line-height: $line-high;
+    color: $text-black;
 }
 
 @mixin text-default {
@@ -32,22 +36,15 @@ $line-high: 40px;
     font-size: $text-l;
     line-height: $line-middle;
 }
-
-@mixin text-label {
+@mixin subtitle {
     font-weight: $font-medium;
-    font-size: $text-m;
-    line-height: $line-middle;
     color: $text-black;
+    
 }
-
 @mixin text-error {
     font-weight: $font-light;
     font-size: $text-s;
     line-height: $line-low;
-}
-
-@mixin cursor {
-    cursor: url('../icons/pointer.svg'), auto;
 }
 
 @mixin btn_shadow {
