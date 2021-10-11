@@ -19,7 +19,7 @@
         :errors="errors"
       />
       <BaseButton @click="calculate" color="transparent">Рассчитать</BaseButton>
-      <ul v-if="paymentList" class="popup-list">
+      <ul v-if="paymentList && pay" class="popup-list">
         <p class="popup-list-text">Итого можете внести в качестве досрочных:</p>
         <li v-for="(payment, idx) in payments" :key="idx">
           <BaseCheckbox>
