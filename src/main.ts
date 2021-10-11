@@ -1,6 +1,12 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import store from "./store";
 import './assets/styles/fonts.css'
 
-createApp(App).use(store).mount("#app");
+import registerBaseComponents from './helpers/registerBaseComponents'
+
+export const app = createApp(App)
+
+// Register base components
+registerBaseComponents(app)
+
+app.mount('#app')
